@@ -1,0 +1,111 @@
+<div class="blockUI" style="display:none"></div>
+<div class="blockUI blockOverlay" style="z-index: 9999993; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(255, 255, 255); opacity: 0.6; cursor: wait; position: fixed;"></div>
+<div class="blockUI blockMsg blockPage" style="z-index: 9999995; position: fixed; padding: 15px; margin: 0px; width: 30%; top: 40%; left: 35%; text-align: center; color: rgb(255, 255, 255); border: none; background-color: rgb(68, 68, 68); cursor: wait;">Loading...</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>FTP Wordpress</h1>
+        </div>
+    </div>
+    <div class="row row-box">
+        <div id="sidebar-ftp" class="col-md-3 divider-folder">
+            <div class="k-textbox k-space-right search-wrapper content-search-files">
+                <input id="employees-search" type="text" placeholder="Search FTP..." autofocus>
+                <span class="k-icon k-i-search"></span>
+            </div>
+            <hr>
+            <ul id="treeview">
+                {{content}}
+            </ul>
+        </div>
+        <div id="content-ftp" class="col-md-9 ajust-left">
+            <div class="code hide"></div>
+            <div class="image hide"></div>
+            <div class="video hide"></div>
+            <div class="background-wrap hide nothing">
+                <div class="x1">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x2">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x3">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x4">
+                    <div class="cloud"></div>
+                </div>
+
+                <div class="x5">
+                    <div class="cloud"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul id="context-menu-image" class="context-menu">
+    <li data-type="folder"><i class="fa fa-plus"></i> New Folder</li>
+    <li data-type="image"><i class="fa fa-picture-o"></i> Open</li>
+    <li data-type="download"><i class="fa fa-download"></i> Download</li>
+    <li data-type="upload"><i class="fa fa-upload"></i> Upload</li>
+    <li data-type="rename"><i class="fa fa-pencil-square-o"></i> Rename</li>
+    <li data-type="copy"><i class="fa fa-files-o"></i> Copy</li>
+    <li data-type="move"><i class="fa fa-scissors"></i> Move</li>
+    <li data-type="delete"><i class="fa fa-trash-o"></i> Delete</li>
+    <li class="k-separator"></li>
+    <li data-type="properties"><i class="fa fa-info-circle"></i> Properties</li>
+</ul>
+<ul id="context-menu-video" class="context-menu">
+    <li data-type="folder"><i class="fa fa-plus"></i> New Folder</li>
+    <li data-type="video"><i class="fa file-video-o"></i> Open</li>
+    <li data-type="download"><i class="fa fa-download"></i> Download</li>
+    <li data-type="upload"><i class="fa fa-upload"></i> Upload</li>
+    <li data-type="rename"><i class="fa fa-pencil-square-o"></i> Rename</li>
+    <li data-type="copy"><i class="fa fa-files-o"></i> Copy</li>
+    <li data-type="move"><i class="fa fa-scissors"></i> Move</li>
+    <li data-type="delete"><i class="fa fa-trash-o"></i> Delete</li>
+    <li class="k-separator"></li>
+    <li data-type="properties"><i class="fa fa-info-circle"></i> Properties</li>
+</ul>
+<ul id="context-menu-code" class="context-menu">
+    <li>
+        <i class="fa fa-pencil"></i> Edit
+        <ul>
+            <li data-type="editor"><i class="fa fa-code"></i> Code</li>
+            <li data-type="textarea"><i class="fa fa-file-text-o"></i> Textarea</li>
+        </ul>
+    </li>
+    <li data-type="folder"><i class="fa fa-plus"></i> New Folder</li>
+    <li data-type="download"><i class="fa fa-download"></i> Download</li>
+    <li data-type="upload"><i class="fa fa-upload"></i> Upload</li>
+    <li data-type="rename"><i class="fa fa-pencil-square-o"></i> Rename</li>
+    <li data-type="copy"><i class="fa fa-files-o"></i> Copy</li>
+    <li data-type="move"><i class="fa fa-scissors"></i> Move</li>
+    <li data-type="delete"><i class="fa fa-trash-o"></i> Delete</li>
+    <li class="k-separator"></li>
+    <li data-type="properties"><i class="fa fa-info-circle"></i> Properties</li>
+</ul>
+<ul id="context-menu-external" class="context-menu">
+    <li data-type="folder"><i class="fa fa-plus"></i> New Folder</li>
+    <li data-type="download"><i class="fa fa-download"></i> Download</li>
+    <li data-type="upload"><i class="fa fa-upload"></i> Upload</li>
+    <li data-type="rename"><i class="fa fa-pencil-square-o"></i> Rename</li>
+    <li data-type="copy"><i class="fa fa-files-o"></i> Copy</li>
+    <li data-type="move"><i class="fa fa-scissors"></i> Move</li>
+    <li data-type="delete"><i class="fa fa-trash-o"></i> Delete</li>
+    <li class="k-separator"></li>
+    <li data-type="properties"><i class="fa fa-info-circle"></i> Properties</li>
+</ul>
+<ul id="context-menu-folder" class="context-menu">
+    <li data-type="folder"><i class="fa fa-plus"></i> New Folder</li>
+    <li data-type="upload"><i class="fa fa-upload"></i> Upload</li>
+    <li data-type="rename"><i class="fa fa-pencil-square-o"></i> Rename</li>
+    <li data-type="copy"><i class="fa fa-files-o"></i> Copy</li>
+    <li data-type="move"><i class="fa fa-scissors"></i> Move</li>
+    <li data-type="delete"><i class="fa fa-trash-o"></i> Delete</li>
+    <li class="k-separator"></li>
+    <li data-type="properties"><i class="fa fa-info-circle"></i> Properties</li>
+</ul>

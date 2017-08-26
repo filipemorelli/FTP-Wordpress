@@ -1,0 +1,5 @@
+{
+    "require": {
+        "cakephp/filesystem": "^3.4"
+    }
+}
