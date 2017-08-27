@@ -176,7 +176,7 @@ class FTPWordpress
                 'FTP Wordpress', // page title
                 'FTP Wordpress', // menu title
                 'manage_options', // capability
-                'ftp-wordpress', // menu slug
+                'fm-ftp-wordpress', // menu slug
                 array($this, 'generateHtmlContentPage') // callback function
         );
     }
@@ -198,9 +198,9 @@ class FTPWordpress
      */
     public function body_class_admin($classes)
     {
-        if (get_admin_page_parent() == "ftp-wordpress")
+        if (get_admin_page_parent() == "fm-ftp-wordpress")
         {
-            return $classes . ' folded ftp-wordpress';
+            return $classes . ' folded fm-ftp-wordpress';
         }
     }
 
